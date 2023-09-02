@@ -1,0 +1,13 @@
+- Create a requirements.txt
+I use pip freeze to get the packages I need into a requirements.txt file and add that to my repository. 
+I tried to think of a way of why you would want to store the entire virtualenv, but I could not.
+
+
+- Create a Venv with requirements.txt
+Typically the steps you always takes are:
+git clone <repo>
+cd <repo>
+pip install virtualenv (if you don't already have virtualenv installed)
+virtualenv venv to create your new environment (called 'venv' here)
+source venv/bin/activate to enter the virtual environment
+pip install -r requirements.txt to install the requirements in the current environment
